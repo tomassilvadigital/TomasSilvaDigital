@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Configurações pessoais do VS Code
+.vscode/settings.json
+
+# Ficheiros temporários
+*.log
+*.tmp

@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://tomassilvadigital.github.io/sitemap.xml

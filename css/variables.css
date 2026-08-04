@@ -1,0 +1,48 @@
+/* ============================
+   VARIÁVEIS GLOBAIS
+============================ */
+
+:root {
+
+    /* Cores */
+
+    --primary: #E63946;
+    --primary-dark: #C92D3A;
+
+    --background: #FFFFFF;
+    --background-alt: #F8F9FA;
+
+    --text: #111111;
+    --text-light: #666666;
+
+    --border: #E5E5E5;
+
+    --white: #FFFFFF;
+    --black: #000000;
+
+    /* Fontes */
+
+    --font: "Poppins", sans-serif;
+
+    /* Espaçamentos */
+
+    --section-padding: 100px;
+    --container-width: 1200px;
+
+    /* Sombras */
+
+    --shadow-small: 0 5px 15px rgba(0,0,0,.08);
+
+    --shadow-medium: 0 10px 35px rgba(0,0,0,.12);
+
+    --shadow-large: 0 20px 60px rgba(0,0,0,.18);
+
+    /* Bordas */
+
+    --radius: 14px;
+
+    /* Transições */
+
+    --transition: .35s ease;
+
+}

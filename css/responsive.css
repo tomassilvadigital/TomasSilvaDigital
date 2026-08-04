@@ -1,0 +1,47 @@
+@media(max-width:992px){
+
+    h1{
+
+        font-size:3rem;
+
+    }
+
+    h2{
+
+        font-size:2.2rem;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    section{
+
+        padding:70px 0;
+
+    }
+
+    h1{
+
+        font-size:2.4rem;
+
+    }
+
+    h2{
+
+        font-size:2rem;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .container{
+
+        width:92%;
+
+    }
+
+}
