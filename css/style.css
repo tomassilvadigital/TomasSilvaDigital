@@ -1383,10 +1383,15 @@ linear-gradient(
 .service-card i{
 
     font-size:55px;
+    color:#E53935;
+    margin-bottom:25px;
+    transition:.3s;
 
-    color:var(--primary);
+}
 
-    margin-bottom:20px;
+.service-card:hover i{
+
+    transform:scale(1.15);
 
 }
 
