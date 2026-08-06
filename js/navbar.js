@@ -1,17 +1,17 @@
-window.addEventListener("scroll", function () {
+document.addEventListener("DOMContentLoaded", () => {
 
-    const navbar = document.querySelector(".navbar");
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
-    if (window.scrollY > 40) {
+    document.querySelectorAll(".nav-link").forEach(link => {
 
-        navbar.classList.add("scrolled");
+        const href = link.getAttribute("href");
 
-    }
+        link.classList.remove("active");
 
-    else {
+        if (href === currentPage) {
+            link.classList.add("active");
+        }
 
-        navbar.classList.remove("scrolled");
-
-    }
+    });
 
 });
