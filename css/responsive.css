@@ -45,3 +45,149 @@
     }
 
 }
+@media (max-width: 1200px){
+
+.hero h1{
+
+    font-size: 4rem;
+
+}
+
+}
+@media (max-width: 992px){
+
+.hero h1{
+
+    font-size: 3.4rem;
+
+}
+
+}
+/*======================================
+        HERO FLOATING CARDS
+======================================*/
+
+@media (max-width:1200px){
+
+    .top-card{
+
+        width:130px;
+        padding:12px 15px;
+
+        top:20px;
+        left:20px;
+
+    }
+
+    .top-card strong{
+
+        font-size:1.2rem;
+
+    }
+
+    .top-card span{
+
+        font-size:.85rem;
+
+    }
+
+    .bottom-card{
+
+        width:155px;
+        padding:12px 15px;
+
+        right:20px;
+        bottom:20px;
+
+        font-size:.90rem;
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    .top-card{
+
+        width:115px;
+
+        top:15px;
+        left:15px;
+
+    }
+
+    .top-card strong{
+
+        font-size:1rem;
+
+    }
+
+    .top-card span{
+
+        font-size:.75rem;
+
+    }
+
+    .bottom-card{
+
+        width:135px;
+
+        right:15px;
+        bottom:15px;
+
+        font-size:.80rem;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .floating-card{
+
+        display:none;
+
+    }
+
+}
+/*==================================
+    PORTFÓLIO RESPONSIVO
+==================================*/
+
+@media (max-width:992px){
+
+    .project-card img{
+
+        height:220px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .portfolio-page{
+
+        padding:70px 0;
+
+    }
+
+    .project-card img{
+
+        height:200px;
+
+    }
+
+    .project-content{
+
+        padding:22px;
+
+    }
+
+    .project-content h3{
+
+        font-size:1.5rem;
+
+    }
+
+}
