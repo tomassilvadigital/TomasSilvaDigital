@@ -630,178 +630,186 @@ linear-gradient(
 
 }
 
-/*==================================================
-                    SERVIÇOS
-==================================================*/
+/*==================================================*
+ * SERVIÇOS
+ *==================================================*/
 
-#servicos{
+/* ================= SERVIÇOS - INDEX ================= */
 
-    padding:120px 0;
-
-    background:#ffffff;
-
+#servicos {
+    padding: 120px 0;
+    background: #ffffff;
 }
 
-.section-title{
-
-    text-align:center;
-
-    max-width:700px;
-
-    margin:0 auto 70px;
-
+.section-title {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 70px;
 }
 
-.section-title span{
-
-    color:#E53935;
-
-    font-weight:700;
-
-    letter-spacing:2px;
-
-    font-size:.9rem;
-
+.section-title span {
+    color: #E53935;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: .9rem;
 }
 
-.section-title h2{
-
-    font-size:2.8rem;
-
-    margin:20px 0;
-
-    color:#1F2937;
-
+.section-title h2 {
+    font-size: 2.8rem;
+    margin: 20px 0;
+    color: #1F2937;
 }
 
-.section-title p{
-
-    color:#6B7280;
-
-    line-height:1.8;
-
+.section-title p {
+    color: #6B7280;
+    line-height: 1.8;
 }
 
-.services-grid{
 
-    display:grid;
+/* ================= GRELHA ================= */
 
-    grid-template-columns:repeat(3,1fr);
-
-    gap:35px;
-
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
 }
 
-.service-card{
 
-    background:white;
+/* ================= CARTÃO ================= */
 
-    border-radius:25px;
+.service-card {
+    background: #ffffff;
 
-    padding:40px;
+    border-radius: 25px;
 
-    transition:.35s;
+    padding: 40px;
 
-    box-shadow:0 15px 40px rgba(0,0,0,.06);
+    transition: .35s;
 
-    position:relative;
+    box-shadow: 0 15px 40px rgba(0,0,0,.06);
 
-    overflow:hidden;
+    position: relative;
 
+    overflow: hidden;
+
+    height: 100%;
 }
 
-.service-card::before{
 
-    content:"";
+/* Linha vermelha no topo */
 
-    position:absolute;
+.service-card::before {
+    content: "";
 
-    left:0;
+    position: absolute;
 
-    top:0;
+    left: 0;
+    top: 0;
 
-    width:100%;
+    width: 100%;
+    height: 5px;
 
-    height:5px;
+    background: #E53935;
 
-    background:#E53935;
+    transform: scaleX(0);
 
-    transform:scaleX(0);
-
-    transition:.35s;
-
+    transition: .35s;
 }
 
-.service-card:hover{
 
-    transform:translateY(-12px);
+/* Hover */
 
-    box-shadow:0 25px 60px rgba(0,0,0,.12);
+.service-card:hover {
+    transform: translateY(-10px);
 
+    box-shadow: 0 25px 60px rgba(0,0,0,.12);
 }
 
-.service-card:hover::before{
-
-    transform:scaleX(1);
-
+.service-card:hover::before {
+    transform: scaleX(1);
 }
 
-.service-icon{
 
-    width:75px;
+/* ================= ÍCONE ================= */
 
-    height:75px;
+.service-icon {
+    width: 75px;
+    height: 75px;
 
-    background:#ffe8e8;
+    background: #ffe8e8;
 
-    border-radius:20px;
+    border-radius: 20px;
 
-    display:flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    justify-content:center;
+    font-size: 2rem;
 
-    align-items:center;
+    margin-bottom: 30px;
 
-    font-size:2rem;
-
-    margin-bottom:30px;
-
+    transition: .35s;
 }
 
-.service-card h3{
-
-    margin-bottom:18px;
-
-    color:#1F2937;
-
+.service-card:hover .service-icon {
+    transform: rotate(-8deg) scale(1.08);
 }
 
-.service-card p{
 
-    color:#6B7280;
+/* Caso uses ícones Font Awesome */
 
-    line-height:1.8;
+.service-card i {
+    font-size: 55px;
 
-    margin-bottom:30px;
+    color: #E53935;
 
+    margin-bottom: 25px;
+
+    transition: .3s;
 }
 
-.service-card a{
-
-    text-decoration:none;
-
-    color:#E53935;
-
-    font-weight:700;
-
+.service-card:hover i {
+    transform: scale(1.15);
 }
 
-.service-card:hover .service-icon{
 
-    transform:rotate(-8deg) scale(1.08);
+/* ================= TÍTULO ================= */
 
-    transition:.35s;
+.service-card h3 {
+    margin-bottom: 18px;
 
+    color: #1F2937;
+
+    font-size: 25px;
+}
+
+
+/* ================= TEXTO ================= */
+
+.service-card p {
+    color: #6B7280;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+
+/* ================= LINK ================= */
+
+.service-card a {
+    text-decoration: none;
+
+    color: #E53935;
+
+    font-weight: 700;
+}
+
+
+/* ================= PÁGINA SERVIÇOS ================= */
+
+.services-page {
+    padding: 100px 0;
 }
 /*==================================================
                     PORTEFÓLIO
@@ -1332,72 +1340,6 @@ linear-gradient(
 .info-card p{
 
     color:#666;
-
-}
-/*==========================
-        SERVIÇOS
-===========================*/
-
-.services-page{
-
-    padding:100px 0;
-
-}
-
-.service-card{
-
-    background:#fff;
-
-    padding:40px;
-
-    border-radius:20px;
-
-    text-align:center;
-
-    transition:.35s;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-    height:100%;
-
-}
-
-.service-card:hover{
-
-    transform:translateY(-10px);
-
-    box-shadow:0 20px 40px rgba(0,0,0,.15);
-
-}
-
-.service-card i{
-
-    font-size:55px;
-    color:#E53935;
-    margin-bottom:25px;
-    transition:.3s;
-
-}
-
-.service-card:hover i{
-
-    transform:scale(1.15);
-
-}
-
-.service-card h3{
-
-    margin-bottom:15px;
-
-    font-size:25px;
-
-}
-
-.service-card p{
-
-    color:#666;
-
-    line-height:1.8;
 
 }
 
