@@ -1813,3 +1813,26 @@ linear-gradient(
     font-size:.9rem;
 
 }
+.button {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.button:hover {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+/* ================= PORTEFÓLIO ================= */
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-grid > div {
+    display: flex;
+}
+
+.portfolio-grid .project-card {
+    width: 100%;
+}

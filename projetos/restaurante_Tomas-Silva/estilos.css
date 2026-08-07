@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8B0000;
+    padding: 20px;
+    color: white;
+  }
+  .img-menu {
+           height: 650px;
+  }
+  .img-prato{
+              height: 650px;
+  }
+  .img-sobremesa{
+    height: 650px;
+  }
+  .img-historia{
+              height: 700px;
+  }
+  header .logo h1 {
+    font-size: 2.5em;
+  }
+  
+  header .logo p {
+    font-size: 1.2em;
+  }
+  
+  nav .menu-lateral ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav .menu-lateral ul li {
+    margin: 10px 0;
+  }
+  
+  nav .menu-lateral ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav .menu-lateral ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .banner {
+    width: 100%;
+    height: 400px;
+    background-color: #e0e0e0;
+    margin-top: 20px;
+  }
+  
+  .banner .imagem-banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .introducao {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .destaques {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .destaques-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .destaque-item {
+    text-align: center;
+    width: 30%;
+  }
+  
+  .destaque-item h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .destaque-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .localizacao {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .localizacao img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  footer {
+    background-color: #8B0000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+  }
+  
