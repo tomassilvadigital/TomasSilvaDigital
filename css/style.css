@@ -918,13 +918,9 @@ linear-gradient(
 
 .about-grid{
 
-    display:grid;
+   display:block;
 
-    grid-template-columns:1fr 1.2fr;
-
-    gap:70px;
-
-    align-items:center;
+    width:100%;
 
 }
 
