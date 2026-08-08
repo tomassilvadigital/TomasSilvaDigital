@@ -1778,3 +1778,14 @@ linear-gradient(
 .portfolio-grid .project-card {
     width: 100%;
 }
+/* ================= SOBRE MIM - INDEX ================= */
+
+#sobre .about-grid {
+    display: block;
+}
+
+#sobre .about-content {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
