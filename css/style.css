@@ -1785,3 +1785,14 @@ linear-gradient(
     max-width: 900px;
     margin: 0 auto;
 }
+.project-badge {
+    display: inline-block;
+    background: #E53935;
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 8px 0 15px;
+}
