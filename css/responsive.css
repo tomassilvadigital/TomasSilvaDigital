@@ -244,3 +244,40 @@
     }
 
 }
+
+/* Horário de atendimento */
+@media (max-width: 991px){
+    .business-hours-box{
+        grid-template-columns:auto 1fr;
+    }
+
+    .business-hours-times{
+        grid-column:1 / -1;
+    }
+}
+
+@media (max-width: 575px){
+    .business-hours{
+        padding:10px 0 50px;
+    }
+
+    .business-hours-box{
+        grid-template-columns:1fr;
+        padding:28px 22px;
+    }
+
+    .business-hours-icon{
+        width:60px;
+        height:60px;
+        font-size:27px;
+    }
+
+    .business-hours-times{
+        grid-column:auto;
+    }
+
+    .business-hours-row{
+        flex-direction:column;
+        gap:3px;
+    }
+}
