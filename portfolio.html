@@ -16,7 +16,7 @@
 
 <meta name="theme-color" content="#E53935">
 
-<link rel="icon" type="image/png" href="images/favicon.png">
+
 
     <!-- Google Fonts -->
 
@@ -50,6 +50,7 @@
     <link rel="stylesheet" href="css/animations.css">
 
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/portfolio-comercial.css">
 
 </head>
 
@@ -139,156 +140,91 @@
 
 <main>
 
-    <!-- ===== Banner ===== -->
-
-    <section class="page-banner">
-
-        <div class="container text-center">
-
-            <span class="section-tag">
-
-                PORTEFÓLIO
-
-            </span>
-
-            <h1>Os meus projetos</h1>
-
-            <p>
-
-                Alguns dos projetos que desenvolvi durante a minha aprendizagem e experiência em desenvolvimento web e programação.
-
-            </p>
-
+    <!-- Portefólio comercial: sem alterar o menu nem o rodapé existentes -->
+    <section class="page-banner portfolio-hero" aria-labelledby="portfolio-title">
+      <div class="container portfolio-hero-inner">
+        <div>
+          <span class="section-tag">PORTEFÓLIO · TOMÁS SILVA DIGITAL</span>
+          <h1 id="portfolio-title">Ideias transformadas em <span>experiências digitais.</span></h1>
+          <p>Explora websites reais e projetos conceptuais que mostram diferentes soluções de design e desenvolvimento web para negócios.</p>
+          <div class="portfolio-hero-actions">
+            <a class="button" href="contacto.html">Pedir um website <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            <a class="portfolio-outline-button" href="#trabalhos">Explorar projetos <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+          </div>
         </div>
-
+        <div class="portfolio-hero-image"><img src="images/projetos/estrela-do-sado-mockup.jpg" alt="Pré-visualização do website Estrela do Sado" width="960" height="600"></div>
+      </div>
     </section>
 
-  <!-- ===== Projetos ===== -->
-
-<section class="portfolio-page">
-    <div class="container">
-
-        <div class="portfolio-intro">
-            <div>
-                <span class="portfolio-kicker">TRABALHOS SELECIONADOS</span>
-                <h2>Projetos com propósito, design e código.</h2>
-            </div>
-            <p>
-                Aqui encontras alguns dos trabalhos que melhor representam a minha evolução em
-                desenvolvimento web: desde projetos conceptuais até websites reais publicados online.
-            </p>
+    <section class="portfolio-page portfolio-commercial" id="trabalhos" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="portfolio-intro portfolio-commercial-intro">
+          <div><span class="portfolio-kicker">TRABALHOS SELECIONADOS</span><h2 id="projects-heading">Cada projeto, uma solução.</h2></div>
+          <p>Apresento claramente o que é um trabalho real, um projeto pessoal ou um conceito de demonstração. Assim, podes conhecer o tipo de website que posso desenvolver para o teu negócio.</p>
         </div>
-
-        <!-- Projeto em destaque -->
-        <article class="featured-project">
-            <div class="featured-project-image">
-                <img src="images/projetos/estrela-do-sado-mockup.jpg"
-                     alt="Website Estrela do Sado">
-                <span class="featured-label">PROJETO REAL · 2026</span>
+        <article class="featured-project" aria-labelledby="estrela-title">
+          <div class="featured-project-image">
+            <img src="images/projetos/estrela-do-sado-mockup.jpg" alt="Mockup do website Estrela do Sado para restaurante" loading="lazy" width="960" height="600">
+            <span class="featured-label">PROJETO REAL</span>
+          </div>
+          <div class="featured-project-content">
+            <span class="project-type">Restaurantes · Website institucional</span>
+            <h2 id="estrela-title">Estrela do Sado</h2>
+            <p>Website para um restaurante nas Praias do Sado, em Setúbal. Organiza a apresentação do espaço, menu, contactos, horários, localização e informação para marcações.</p>
+            <div class="portfolio-tags"><span>Menu</span><span>Contactos</span><span>Localização</span><span>Responsivo</span></div>
+            <div class="project-actions">
+              <a href="estrela-do-sado.html" class="portfolio-button">Ver caso de estudo</a>
+              <a href="https://tomassilvadigital.github.io/Estrela_do_sado/" target="_blank" rel="noopener noreferrer" class="portfolio-link-secondary">Visitar website <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
             </div>
-
-            <div class="featured-project-content">
-                <span class="project-type">Website para restaurante</span>
-                <h2>Estrela do Sado</h2>
-                <p>
-                    Website desenvolvido para um restaurante nas Praias do Sado, em Setúbal.
-                    O projeto reúne menu, contactos, horários, localização com Google Maps e
-                    informação para marcações numa experiência simples e responsiva.
-                </p>
-
-                <div class="portfolio-tags">
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    <span>Bootstrap</span>
-                    <span>GitHub Pages</span>
-                </div>
-
-                <div class="project-actions">
-                    <a href="estrela-do-sado.html" class="portfolio-button">
-                        Ver caso de estudo
-                    </a>
-                    <a href="https://tomassilvadigital.github.io/Estrela_do_sado/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="portfolio-link-secondary">
-                        Visitar site ↗
-                    </a>
-                </div>
-            </div>
+            <a class="portfolio-feature-cta" href="contacto.html">Quero um website para o meu restaurante <span aria-hidden="true">→</span></a>
+          </div>
         </article>
-
         <div class="portfolio-section-heading">
-            <span>OUTROS PROJETOS</span>
-            <h2>Explora mais trabalhos</h2>
-            <p>Projetos pessoais e conceptuais desenvolvidos para praticar e demonstrar diferentes soluções web.</p>
+          <span>MAIS TRABALHOS</span><h2>Design adaptado a diferentes ideias.</h2>
+          <p>Um projeto pessoal e um conceito demonstrativo. As etiquetas identificam a natureza de cada trabalho.</p>
         </div>
-
         <div class="row g-4 portfolio-clean-grid">
-
-            <div class="col-lg-6">
-                <article class="project-card">
-                    <div class="project-image-wrap">
-                        <img src="images/projetos/website-pessoal-mockup.jpg" alt="Website Tomás Silva Digital">
-                        <span class="project-image-label">PROJETO PESSOAL · 2026</span>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-type">Portefólio profissional</span>
-                        <h3>Tomás Silva Digital</h3>
-                        <p>
-                            O meu website profissional, criado para apresentar serviços, projetos,
-                            competências e formas de contacto numa identidade visual consistente.
-                        </p>
-                        <div class="portfolio-tags">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
-                            <span>Bootstrap</span>
-                        </div>
-                        <a href="index.html" class="portfolio-button">Explorar website</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-lg-6">
-                <article class="project-card">
-                    <div class="project-image-wrap">
-                        <img src="images/projetos/trattoria-bella-italia-mockup.png" alt="Trattoria Bella Italia">
-                        <span class="project-image-label project-image-label-demo">PROJETO FICTÍCIO · 2026</span>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-type">Website conceptual</span>
-                        <h3>Trattoria Bella Italia</h3>
-                        <p>
-                            Conceito de website para uma trattoria italiana, criado com foco numa
-                            apresentação elegante, navegação simples e adaptação a diferentes ecrãs.
-                        </p>
-                        <div class="portfolio-tags">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
-                        </div>
-                        <a href="projetos/restaurante_Tomas-Silva/index.html" class="portfolio-button">
-                            Ver projeto
-                        </a>
-                    </div>
-                </article>
-            </div>
-
+          <div class="col-lg-6">
+            <article class="project-card portfolio-commercial-card">
+              <div class="project-image-wrap">
+                <img src="images/projetos/website-pessoal-mockup.jpg" alt="Mockup do website Tomás Silva Digital" loading="lazy" width="960" height="600">
+                <span class="project-image-label">PROJETO PESSOAL</span>
+              </div>
+              <div class="project-content">
+                <span class="project-type">Portefólio · Serviços digitais</span><h3>Tomás Silva Digital</h3>
+                <p>Website profissional criado para apresentar serviços, projetos e formas de contacto, com identidade visual própria e navegação responsiva.</p>
+                <div class="portfolio-tags"><span>Identidade visual</span><span>Portefólio</span><span>Responsivo</span></div>
+                <div class="project-actions"><a href="index.html" class="portfolio-button">Ver projeto</a><a href="contacto.html" class="portfolio-link-secondary">Pedir um semelhante <span aria-hidden="true">→</span></a></div>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-6">
+            <article class="project-card portfolio-commercial-card">
+              <div class="project-image-wrap">
+                <img src="images/projetos/trattoria-bella-italia-mockup.png" alt="Mockup do conceito de website Trattoria Bella Italia" loading="lazy" width="960" height="600">
+                <span class="project-image-label project-image-label-demo">CONCEITO FICTÍCIO</span>
+              </div>
+              <div class="project-content">
+                <span class="project-type">Restauração · Conceito de website</span><h3>Trattoria Bella Italia</h3>
+                <p>Projeto conceptual para demonstrar como um restaurante pode apresentar pratos, navegação e identidade visual. Não corresponde a um cliente real.</p>
+                <div class="portfolio-tags"><span>Menu digital</span><span>Apresentação visual</span><span>Navegação</span></div>
+                <div class="project-actions"><a href="projetos/restaurante_Tomas-Silva/index.html" class="portfolio-button">Ver demonstração</a><a href="contacto.html" class="portfolio-link-secondary">Pedir um semelhante <span aria-hidden="true">→</span></a></div>
+              </div>
+            </article>
+          </div>
         </div>
-
-        <div class="portfolio-more">
-            <div>
-                <span>NOVOS TRABALHOS</span>
-                <h2>O portefólio continua a crescer.</h2>
-                <p>
-                    Estou a desenvolver novos projetos e a melhorar continuamente os trabalhos já publicados.
-                </p>
-            </div>
-            <a href="contacto.html" class="button">Falar sobre um projeto</a>
+        <div class="portfolio-process-note">
+          <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+          <div><strong>O teu projeto não precisa de ser igual a estes.</strong><p>Estas páginas mostram possibilidades. O design, a estrutura e as funcionalidades são definidos em função das necessidades de cada negócio.</p></div>
         </div>
-
-    </div>
-</section>
+        <section class="portfolio-conversion" aria-labelledby="portfolio-cta-title">
+          <span class="portfolio-kicker">VAMOS FALAR DO TEU NEGÓCIO</span>
+          <h2 id="portfolio-cta-title">Queres um website que represente a tua marca?</h2>
+          <p>Conta-me a tua ideia. Podemos definir uma solução à medida dos teus objetivos e orçamento.</p>
+          <div class="portfolio-hero-actions"><a class="button" href="contacto.html">Pedir orçamento <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a><a class="portfolio-outline-button" href="servicos.html">Conhecer serviços</a></div>
+        </section>
+      </div>
+    </section>
    <!-- ================= FOOTER ================= -->
 
 <footer class="footer">
