@@ -6,9 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <title>Contacto |Tomás Silva Digital </title>
+   <title>Pedir Orçamento | Tomás Silva Digital</title>
 
-<meta name="description" content="Tomás Silva Digital - Desenvolvimento de websites modernos, rápidos e profissionais.">
+<meta name="description" content="Pede um orçamento para o teu website. Explica a tua ideia à Tomás Silva Digital e recebe uma proposta adaptada ao teu negócio.">
 
 <meta name="keywords" content="Tomás Silva, Web Design, Desenvolvimento Web, HTML, CSS, JavaScript, PHP, MySQL">
 
@@ -50,6 +50,7 @@
     <link rel="stylesheet" href="css/animations.css">
 
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/contacto-comercial.css">
 
 </head>
 
@@ -117,7 +118,7 @@
 
                     <li class="nav-item">
 
-                        <a class="nav-link" href="contacto.html">Contacto</a>
+                        <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
 
                     </li>
 
@@ -136,268 +137,113 @@
     </nav>
 
 </header>
-<main>
-
-    <!-- =========================
-            BANNER
-    ========================== -->
-
-    <section class="page-banner">
-
-        <div class="container text-center">
-
-            <span class="section-tag">
-
-                CONTACTO
-
-            </span>
-
-            <h1>Vamos falar sobre o teu projeto</h1>
-
-            <p>
-
-                Tens uma ideia ou precisas de um website? Entra em contacto comigo e responderei o mais rapidamente possível.
-
-            </p>
-
+<main class="contacto-comercial">
+  <section class="contact-hero">
+    <div class="container">
+      <div class="contact-hero__inner">
+        <span class="contact-eyebrow"><span aria-hidden="true"></span> VAMOS CONSTRUIR A TUA IDEIA</span>
+        <h1>O próximo passo do teu negócio <em>começa aqui.</em></h1>
+        <p>Precisas de um website moderno, de melhorar o que já tens ou de uma solução à medida? Conta-me o teu projeto e vamos encontrar a melhor opção.</p>
+        <div class="contact-hero__actions">
+          <a class="contact-btn contact-btn--primary" href="#pedido-orcamento">Pedir orçamento <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          <a class="contact-btn contact-btn--outline" href="https://wa.me/351933728322?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20um%20or%C3%A7amento%20para%20um%20website." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Falar no WhatsApp</a>
         </div>
-
-    </section>
-
-
-
-    <!-- =========================
-          INFORMAÇÕES CONTACTO
-    ========================== -->
-
-    <section class="contact-info">
-
-        <div class="container">
-
-            <div class="row g-4">
-
-                <div class="col-lg-3 col-md-6">
-
-                    <div class="contact-card">
-
-                        <i class="fa-solid fa-envelope"></i>
-
-                        <h3>Email</h3>
-
-                        <p>
-
-                            tomassilvadigital@gmail.com
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="col-lg-3 col-md-6">
-
-                    <div class="contact-card">
-
-                        <i class="fa-solid fa-phone"></i>
-
-                        <h3>Telefone</h3>
-
-                        <p>
-
-                            +351 933 728 322
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="col-lg-3 col-md-6">
-
-                    <div class="contact-card">
-
-                        <i class="fa-solid fa-location-dot"></i>
-
-                        <h3>Localização</h3>
-
-                        <p>
-
-                            Setúbal, Portugal
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="col-lg-3 col-md-6">
-
-                    <div class="contact-card">
-
-                        <i class="fa-brands fa-instagram"></i>
-
-                        <h3>Instagram</h3>
-
-                        <p>
-
-                            @tomassilvadigital
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-
-
-    <!-- =========================
-          HORÁRIO DE ATENDIMENTO
-    ========================== -->
-
-    <section class="business-hours">
-
-        <div class="container">
-
-            <div class="business-hours-box">
-
-                <div class="business-hours-icon">
-                    <i class="fa-regular fa-clock"></i>
-                </div>
-
-                <div class="business-hours-content">
-                    <span class="section-tag">ATENDIMENTO</span>
-                    <h2>Horário de atendimento</h2>
-                    <p>Estou disponível para responder a pedidos, dúvidas e orçamentos dentro destes horários.</p>
-                </div>
-
-                <div class="business-hours-times">
-
-                    <div class="business-hours-row">
-                        <span>Dias úteis</span>
-                        <strong>09:00 — 19:00</strong>
-                    </div>
-
-                    <div class="business-hours-row">
-                        <span>Fins de semana</span>
-                        <strong>09:00 — 13:00</strong>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-            FORMULÁRIO
-    ========================== -->
-
-    <section class="contact-form">
-
-        <div class="container">
-
-            <div class="section-title text-center">
-
-                <span>MENSAGEM</span>
-
-                <h2>Envia uma mensagem</h2>
-
-                <p>
-
-                    Preenche o formulário abaixo e entrarei em contacto contigo o mais rapidamente possível.
-
-                </p>
-
-            </div>
-
-           <form id="contact-form">
-
-    <div class="row">
-
-        <div class="col-md-6 mb-4">
-
-            <input
-                type="text"
-                id="from_name"
-                name="from_name"
-                class="form-control"
-                placeholder="Nome"
-                required>
-
-        </div>
-
-        <div class="col-md-6 mb-4">
-
-            <input
-                type="email"
-                id="from_email"
-                name="from_email"
-                class="form-control"
-                placeholder="Email"
-                required>
-
-        </div>
-
+        <div class="contact-hero__notes"><span><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Orçamento adaptado</span><span><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Comunicação direta</span><span><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Sem compromisso</span></div>
+      </div>
     </div>
+  </section>
 
-    <div class="mb-4">
-
-        <input
-            type="text"
-            id="subject"
-            name="subject"
-            class="form-control"
-            placeholder="Assunto"
-            required>
-
-    </div>
-
-    <div class="mb-4">
-
-        <textarea
-            id="message"
-            name="message"
-            class="form-control"
-            rows="7"
-            placeholder="Escreve aqui a tua mensagem..."
-            required></textarea>
-
-    </div>
-
-    <div class="text-center">
-
-        <button type="submit" class="button">
-
-            <i class="fa-solid fa-paper-plane"></i>
-
-            Enviar Mensagem
-
-        </button>
-
-    </div>
-
-</form>
+  <section class="contact-main" id="pedido-orcamento" aria-labelledby="form-heading">
+    <div class="container">
+      <div class="row g-4 g-xl-5 align-items-start">
+        <div class="col-lg-7">
+          <div class="contact-form-panel">
+            <span class="contact-section-kicker">PEDIDO DE ORÇAMENTO</span>
+            <h2 id="form-heading">Fala-me do teu <span>projeto.</span></h2>
+            <p class="contact-panel-lead">Preenche os campos abaixo. Quanto mais contexto partilhares, mais fácil será preparar uma proposta adequada.</p>
+            <form id="contact-form" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="from_name">Nome <span aria-hidden="true">*</span></label>
+                  <input class="form-control" id="from_name" name="from_name" type="text" autocomplete="name" maxlength="100" required placeholder="O teu nome">
+                </div>
+                <div class="col-md-6">
+                  <label for="from_email">Email <span aria-hidden="true">*</span></label>
+                  <input class="form-control" id="from_email" name="from_email" type="email" autocomplete="email" inputmode="email" spellcheck="false" autocapitalize="off" maxlength="160" required aria-describedby="email-hint email-error" placeholder="nome@exemplo.pt">
+                  <small id="email-hint" class="contact-field-hint">Confirma que consegues receber mensagens neste endereço.</small>
+                  <small id="email-error" class="contact-field-error" aria-live="polite" hidden></small>
+                </div>
+                <div class="col-md-6">
+                  <label for="email_confirm">Confirmar email <span aria-hidden="true">*</span></label>
+                  <input class="form-control" id="email_confirm" type="email" autocomplete="off" inputmode="email" spellcheck="false" autocapitalize="off" maxlength="160" required aria-describedby="email-confirm-error" placeholder="Repete o teu email">
+                  <small id="email-confirm-error" class="contact-field-error" aria-live="polite" hidden></small>
+                </div>
+                <div class="col-md-6">
+                  <label for="business_name">Nome do negócio <small>(opcional)</small></label>
+                  <input class="form-control" id="business_name" name="business_name" type="text" maxlength="120" placeholder="A tua empresa ou marca">
+                </div>
+                <div class="col-md-6">
+                  <label for="website_type">Tipo de website <span aria-hidden="true">*</span></label>
+                  <select class="form-select" id="website_type" name="website_type" required>
+                    <option value="">Seleciona uma opção</option>
+                    <option>Website Essencial (1 página)</option>
+                    <option>Website Profissional (até 5 páginas)</option>
+                    <option>Website Personalizado</option>
+                    <option>Melhoria de website existente</option>
+                    <option>Ainda não sei</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="budget">Orçamento previsto <span aria-hidden="true">*</span></label>
+                  <select class="form-select" id="budget" name="budget" required>
+                    <option value="">Seleciona uma faixa</option>
+                    <option>Até 150 €</option>
+                    <option>150 € – 300 €</option>
+                    <option>300 € – 500 €</option>
+                    <option>500 € – 800 €</option>
+                    <option>Mais de 800 €</option>
+                    <option>Preciso de orientação</option>
+                  </select>
+                  <small class="contact-field-hint">O valor é indicativo e não representa um orçamento final.</small>
+                </div>
+                <div class="col-12">
+                  <label for="project_description">Descrição do projeto <span aria-hidden="true">*</span></label>
+                  <textarea class="form-control" id="project_description" name="project_description" rows="6" maxlength="3000" required placeholder="Explica o teu negócio, o que gostarias de ter no website e as funcionalidades importantes..."></textarea>
+                </div>
+              </div>
+              <!-- Mantém os campos utilizados pelo template EmailJS existente. -->
+              <input type="hidden" name="subject" id="subject" value="Pedido de orçamento — Tomás Silva Digital">
+              <textarea name="message" id="message" hidden aria-hidden="true" tabindex="-1"></textarea>
+              <div class="contact-privacy">
+                <label class="contact-privacy__check" for="privacy_consent">
+                  <input id="privacy_consent" type="checkbox" required>
+                  <span>Li a informação sobre o tratamento dos meus dados e aceito que sejam utilizados para responder ao meu pedido. <span aria-hidden="true">*</span></span>
+                </label>
+                <p>Os dados enviados serão utilizados pela Tomás Silva Digital para analisar e responder ao teu pedido de contacto/orçamento. O envio é processado através do serviço EmailJS. Podes solicitar informação, acesso, retificação ou eliminação dos teus dados através de <a href="mailto:tomassilvadigital@gmail.com">tomassilvadigital@gmail.com</a>. Os dados serão conservados apenas durante o período necessário para gerir o pedido, salvo obrigação legal aplicável.</p>
+              </div>
+              <div class="contact-submit-row">
+                <button id="contact-submit" class="contact-btn contact-btn--primary" type="submit"><span>Enviar pedido de orçamento</span> <i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
+                <small>Campos com * são obrigatórios.</small>
+              </div>
+              <p id="form-status" class="contact-status" role="status" aria-live="polite" tabindex="-1" hidden></p>
+            </form>
+          </div>
         </div>
-
-    </section>
-
+        <div class="col-lg-5">
+          <aside class="contact-aside" aria-label="Outras formas de contacto">
+            <span class="contact-section-kicker">CONTACTO DIRETO</span>
+            <h2>Preferes falar <span>diretamente?</span></h2>
+            <p>Escolhe o canal que te dá mais jeito. Podes também explorar os projetos antes de me escrever.</p>
+            <a class="contact-link-card contact-link-card--featured" href="https://wa.me/351933728322?text=Ol%C3%A1%21%20Gostaria%20de%20pedir%20um%20or%C3%A7amento%20para%20um%20website." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span><strong>WhatsApp</strong><small>Enviar mensagem direta</small></span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            <a class="contact-link-card" href="mailto:tomassilvadigital@gmail.com"><i class="fa-regular fa-envelope" aria-hidden="true"></i><span><strong>Email</strong><small>tomassilvadigital@gmail.com</small></span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            <a class="contact-link-card" href="https://www.instagram.com/tomassilvadigital/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i><span><strong>Instagram</strong><small>@tomassilvadigital</small></span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            <div class="contact-aside__location"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Setúbal, Portugal · Projetos à distância</div>
+            <div class="contact-aside__portfolio"><span>AINDA A EXPLORAR?</span><h3>Vê o que posso criar para o teu negócio.</h3><a href="portfolio.html">Explorar portefólio <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
    <!-- ================= FOOTER ================= -->
 
@@ -456,7 +302,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <!-- JavaScript -->
-<script src="js/script.js"></script>
+<script src="js/contacto-comercial.js"></script>
 <script src="js/navbar.js"></script>
 <script src="js/scroll.js"></script>
 <script src="js/animations.js"></script>
