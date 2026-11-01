@@ -3,6 +3,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contact-form');
   if (!form) return;
 
+  // Seleção opcional de plano via URL, com lista fechada de valores permitidos.
+  const planOptions = {
+    'manutencao-essencial': 'Manutenção — Essencial (20 €/mês)',
+    'manutencao-profissional': 'Manutenção — Profissional (35 €/mês)',
+    'manutencao-premium': 'Manutenção — Premium (60 €/mês)',
+    'manutencao-avulso': 'Manutenção — Pedido avulso'
+  };
+  const planKey = new URLSearchParams(window.location.search).get('servico');
+  const typeField = document.getElementById('website_type');
+  if (planKey && Object.prototype.hasOwnProperty.call(planOptions, planKey) && typeField) {
+    typeField.value = planOptions[planKey];
+  }
+
   const status = document.getElementById('form-status');
   const button = document.getElementById('contact-submit');
   const buttonText = button.querySelector('span');

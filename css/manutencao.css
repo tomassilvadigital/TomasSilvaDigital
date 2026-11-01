@@ -1,0 +1,56 @@
+/* Fase 2 — Manutenção. Isolado para não alterar estilos das páginas aprovadas. */
+.tsd-maintenance{font-family:'Poppins',sans-serif;color:#202837;background:#fff;padding-top:78px}
+.tsd-maintenance *{box-sizing:border-box}
+.tsd-maintenance .mnt-hero{padding:115px 0 105px;background:radial-gradient(circle at 82% 20%,rgba(229,57,53,.15),transparent 38%),linear-gradient(135deg,#fff 12%,#faf8f8 100%)}
+.tsd-maintenance .mnt-hero-inner{max-width:850px}
+.tsd-maintenance .mnt-eyebrow{display:inline-block;color:#e53935;letter-spacing:.18em;font-weight:700;font-size:.77rem;margin-bottom:18px}
+.tsd-maintenance h1{font-size:clamp(2.55rem,5vw,4.6rem);font-weight:750;line-height:1.15;letter-spacing:-.045em;margin-bottom:24px}
+.tsd-maintenance h1 em{font-style:normal;color:#e53935}
+.tsd-maintenance .mnt-hero p{max-width:665px;font-size:1.07rem;color:#596173;line-height:1.85}
+.tsd-maintenance .mnt-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+.tsd-maintenance .mnt-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none!important;text-align:center;border-radius:12px;padding:15px 22px;font-weight:650;font-size:.9rem;transition:transform .2s,box-shadow .2s,background .2s;border:1.5px solid #e53935;line-height:1.4}
+.tsd-maintenance .mnt-btn:hover{transform:translateY(-2px)}
+.tsd-maintenance .mnt-btn:focus-visible,.tsd-maintenance summary:focus-visible{outline:3px solid #e53935;outline-offset:3px}
+.tsd-maintenance .mnt-btn-primary{background:#e53935;color:white!important}
+.tsd-maintenance .mnt-btn-primary:hover{box-shadow:0 10px 25px rgba(229,57,53,.20);background:#d42b32}
+.tsd-maintenance .mnt-btn-outline{background:#fff;color:#e53935!important}
+.tsd-maintenance .mnt-note{font-size:.8rem!important;margin-top:18px}
+.tsd-maintenance .mnt-section{padding:90px 0}
+.tsd-maintenance .mnt-section-tint{background:#faf7f8}
+.tsd-maintenance .mnt-intro{max-width:760px;margin-bottom:38px}
+.tsd-maintenance h2{font-size:clamp(1.85rem,3.2vw,2.8rem);font-weight:750;letter-spacing:-.035em;margin-bottom:15px}
+.tsd-maintenance .mnt-intro>p,.tsd-maintenance .mnt-plan>p,.tsd-maintenance .mnt-info p{color:#636c7b;line-height:1.8}
+.tsd-maintenance .mnt-benefits,.tsd-maintenance .mnt-plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.tsd-maintenance .mnt-benefits article,.tsd-maintenance .mnt-plan,.tsd-maintenance .mnt-info,.tsd-maintenance .mnt-conditions{background:white;border:1px solid #ece7e7;border-radius:20px;padding:30px;box-shadow:0 14px 36px rgba(20,27,39,.035)}
+.tsd-maintenance .mnt-benefits i{color:#e53935;font-size:1.65rem;margin-bottom:18px}
+.tsd-maintenance h3{font-size:1.14rem;font-weight:700;margin-bottom:12px}
+.tsd-maintenance .mnt-benefits p{color:#636c7b;line-height:1.7;font-size:.91rem;margin:0}
+.tsd-maintenance .mnt-plan{display:flex;flex-direction:column;position:relative}
+.tsd-maintenance .mnt-featured{border:2px solid #e53935;box-shadow:0 16px 40px rgba(229,57,53,.10)}
+.tsd-maintenance .mnt-ribbon{position:absolute;top:-13px;right:22px;background:#e53935;color:white;border-radius:999px;font-size:.67rem;padding:6px 12px;font-weight:700;letter-spacing:.05em}
+.tsd-maintenance .mnt-plan-name{font-size:1.1rem;font-weight:750}
+.tsd-maintenance .mnt-price{font-size:2.7rem;font-weight:800;color:#e53935;margin:10px 0 8px;letter-spacing:-.045em}
+.tsd-maintenance .mnt-price small{font-size:.94rem;color:#596173;font-weight:500;letter-spacing:0}
+.tsd-maintenance .mnt-plan ul{list-style:none;padding:0;margin:20px 0 28px;flex:1}
+.tsd-maintenance .mnt-plan li{padding:10px 0 10px 24px;position:relative;border-bottom:1px solid #f1eeee;font-size:.88rem;line-height:1.6}
+.tsd-maintenance .mnt-plan li:before{content:'✓';position:absolute;left:0;color:#e53935;font-weight:750}
+.tsd-maintenance .mnt-plan-footnote{font-size:.82rem;color:#596173;margin-top:22px}
+.tsd-maintenance .mnt-two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-bottom:20px}
+.tsd-maintenance .mnt-info i{color:#e53935;margin-right:9px}
+.tsd-maintenance .mnt-conditions{background:#fcfcfc}
+.tsd-maintenance .mnt-conditions ul{padding-left:20px;margin:10px 0 0;color:#596173;line-height:1.95}
+.tsd-maintenance .mnt-extras{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.tsd-maintenance .mnt-extras div{border:1px solid #ede2e3;background:#fff;border-radius:14px;padding:23px;font-weight:600}
+.tsd-maintenance .mnt-center{text-align:center;margin-top:30px}
+.tsd-maintenance .mnt-faq{max-width:880px}
+.tsd-maintenance .mnt-faq details{border:1px solid #eee4e5;border-radius:12px;margin-bottom:12px;background:white;overflow:hidden}
+.tsd-maintenance .mnt-faq summary{cursor:pointer;font-weight:650;padding:21px 50px 21px 22px;position:relative;list-style:none}
+.tsd-maintenance .mnt-faq summary::-webkit-details-marker{display:none}
+.tsd-maintenance .mnt-faq summary:after{content:'+';position:absolute;right:22px;color:#e53935;font-size:1.4rem;top:14px}
+.tsd-maintenance .mnt-faq details[open] summary:after{content:'−'}
+.tsd-maintenance .mnt-faq details p{padding:0 22px 22px;margin:0;color:#596173;line-height:1.7}
+.tsd-maintenance .mnt-cta{background:#1d2532;color:white;text-align:center;padding:85px 0}
+.tsd-maintenance .mnt-cta p{color:#d1d4db;max-width:620px;margin:0 auto 28px}
+@media(max-width:992px){.tsd-maintenance .mnt-benefits,.tsd-maintenance .mnt-plans,.tsd-maintenance .mnt-extras{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.tsd-maintenance{padding-top:66px}.tsd-maintenance .mnt-hero{padding:74px 0 62px}.tsd-maintenance .mnt-section{padding:60px 0}.tsd-maintenance .mnt-benefits,.tsd-maintenance .mnt-plans,.tsd-maintenance .mnt-extras,.tsd-maintenance .mnt-two-col{grid-template-columns:1fr}.tsd-maintenance .mnt-plan{padding:26px}.tsd-maintenance .mnt-actions .mnt-btn{width:100%}.tsd-maintenance .mnt-cta{padding:65px 0}}
+@media(prefers-reduced-motion:reduce){.tsd-maintenance .mnt-btn{transition:none}.tsd-maintenance .mnt-btn:hover{transform:none}}
