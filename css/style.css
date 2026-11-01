@@ -2305,3 +2305,13 @@ linear-gradient(
         padding:32px 24px;
     }
 }
+
+/* Fase 3 — Etapa 4: contraste acessível, sem alterar a paleta da marca.
+   A cor #E53935 mantém-se nos detalhes decorativos; onde há texto branco
+   usa-se vermelho mais escuro para cumprir contraste WCAG AA. */
+.button, .navbar .button {background-color:#B71C1C; color:#FFFFFF !important;}
+.button:hover, .button:focus-visible, .navbar .button:hover {background-color:#981414; color:#FFFFFF !important;}
+.hero-badge {color:#A91D1D;}
+.top-card span, .bottom-card span {color:#555555;}
+/* Links textuais em superfícies brancas. */
+a.portfolio-button:not(.button) {color:#B3261E;}
