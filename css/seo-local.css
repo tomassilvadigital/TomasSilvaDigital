@@ -1,0 +1,19 @@
+/* SEO local | Secção de área de atuação, coerente com a identidade TSD. */
+.tsd-local-section{padding:clamp(64px,8vw,108px) 0;background:#111114;color:#f7f7f9}
+.tsd-local-layout{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.85fr);gap:clamp(24px,5vw,70px);align-items:center}
+.tsd-local-eyebrow{display:block;color:#ff6b66;letter-spacing:.13em;font-size:.78rem;font-weight:700;margin-bottom:15px}
+.tsd-local-section h2{color:#fff;font-weight:700;line-height:1.18;font-size:clamp(1.85rem,3vw,2.8rem);margin:0 0 22px}
+.tsd-local-intro p{color:#d6d6da;font-size:1rem;line-height:1.85;max-width:67ch;margin:0 0 16px}
+.tsd-local-intro strong{color:#fff;font-weight:600}
+.tsd-local-actions{display:flex;align-items:center;flex-wrap:wrap;gap:16px;margin-top:28px}
+.tsd-local-link,.tsd-local-panel a{color:#fff;font-weight:600;text-decoration:underline;text-decoration-color:#e53935;text-underline-offset:5px}
+.tsd-local-link:hover,.tsd-local-panel a:hover{color:#ff7773}
+.tsd-local-panel{background:#1b1b20;border:1px solid #393940;border-top:3px solid #e53935;border-radius:18px;padding:clamp(24px,3vw,36px)}
+.tsd-local-panel h3{color:#fff;font-weight:650;font-size:1.35rem;margin:0 0 18px}
+.tsd-local-panel p,.tsd-local-panel li{color:#e0e0e4;line-height:1.75}
+.tsd-local-panel ul{padding:0;margin:0 0 20px;list-style:none}
+.tsd-local-panel li{display:flex;gap:12px;margin-bottom:13px}
+.tsd-local-panel li i{color:#ff706c;margin-top:6px;flex:none}
+.tsd-local-panel a{display:inline-block;margin-top:8px}
+.tsd-local-section a:focus-visible{outline:3px solid #ff817b;outline-offset:5px;border-radius:4px}
+@media(max-width:767px){.tsd-local-layout{grid-template-columns:1fr}.tsd-local-section{padding:64px 0}.tsd-local-panel{padding:25px 22px}}
