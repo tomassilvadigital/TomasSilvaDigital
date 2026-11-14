@@ -163,10 +163,10 @@
                 <p>Os dados enviados serão utilizados pela Tomás Silva Digital para analisar e responder ao teu pedido de contacto/orçamento. O envio é processado através do serviço EmailJS. Podes solicitar informação, acesso, retificação ou eliminação dos teus dados através de <a href="mailto:tomassilvadigital@gmail.com">tomassilvadigital@gmail.com</a>. Os dados serão conservados apenas durante o período necessário para gerir o pedido, salvo obrigação legal aplicável.</p>
               </div>
               <div class="contact-submit-row">
-                <button id="contact-submit" class="contact-btn contact-btn--primary" type="submit"><span>Enviar pedido de orçamento</span> <i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
+                <button id="contact-submit" class="contact-btn contact-btn--primary" type="submit" aria-controls="form-status" aria-busy="false"><span class="spinner-border spinner-border-sm contact-submit-spinner" role="presentation" aria-hidden="true" hidden></span><span class="contact-submit-label">Enviar pedido de orçamento</span> <i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
                 <small>Campos com * são obrigatórios.</small>
               </div>
-              <p id="form-status" class="contact-status" role="status" aria-live="polite" tabindex="-1" hidden></p>
+              <div id="form-status" class="contact-status alert" role="status" aria-live="polite" aria-atomic="true" tabindex="-1" hidden></div>
             </form>
           </div>
         </div>

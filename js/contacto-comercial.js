@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const planOptions = {
     'manutencao-essencial': 'Manutenção — Essencial (20 €/mês)',
     'manutencao-profissional': 'Manutenção — Profissional (35 €/mês)',
-    'manutencao-premium': 'Manutenção — Premium (60 €/mês)',
+    'manutencao-premium': 'Manutenção — Premium (50 €/mês)',
     'manutencao-avulso': 'Manutenção — Pedido avulso'
   };
   const planKey = new URLSearchParams(window.location.search).get('servico');
@@ -18,15 +18,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const status = document.getElementById('form-status');
   const button = document.getElementById('contact-submit');
-  const buttonText = button.querySelector('span');
+  const buttonText = button.querySelector('.contact-submit-label');
+  const spinner = button.querySelector('.contact-submit-spinner');
   const initialText = buttonText.textContent;
+  let sending = false;
+
+  const setSending = (value) => {
+    sending = value;
+    button.disabled = value;
+    button.setAttribute('aria-busy', String(value));
+    form.setAttribute('aria-busy', String(value));
+    spinner.hidden = !value;
+    buttonText.textContent = value ? 'A enviar...' : initialText;
+  };
 
   const showStatus = (message, type) => {
     status.hidden = false;
-    status.className = 'contact-status contact-status--' + type;
+    const classes = {
+      success: 'alert-success',
+      error: 'alert-danger',
+      progress: 'alert-info'
+    };
+    status.className = 'contact-status alert ' + (classes[type] || 'alert-info');
     status.setAttribute('role', type === 'error' ? 'alert' : 'status');
     status.textContent = message;
   };
+
+  const focusStatus = () => status.focus({ preventScroll: false });
 
   const emailInput = document.getElementById('from_email');
   const confirmInput = document.getElementById('email_confirm');
@@ -85,8 +103,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
+    if (sending) return; // Impede duplos envios, mesmo por Enter.
     status.hidden = true;
-    if (!checkEmail() || !checkConfirmation()) {
+
+    // Verificar ambos os emails, mesmo quando o primeiro está inválido.
+    const emailValid = checkEmail();
+    const confirmationValid = checkConfirmation();
+    if (!emailValid || !confirmationValid) {
       showStatus('Verifica o endereço de email e a confirmação antes de enviar.', 'error');
       const invalid = form.querySelector('[aria-invalid="true"]');
       if (invalid) invalid.focus();
@@ -112,23 +135,25 @@ document.addEventListener('DOMContentLoaded', () => {
       clean('project_description')
     ].join('\n');
 
-    button.disabled = true;
-    buttonText.textContent = 'A enviar...';
-    showStatus('A enviar o teu pedido...', 'progress');
+    setSending(true);
+    showStatus('A enviar o teu pedido. Não feches esta página.', 'progress');
     try {
       if (!window.emailjs || typeof window.emailjs.sendForm !== 'function') {
         throw new Error('Serviço de envio indisponível');
       }
       window.emailjs.init({publicKey: '71lMnUL-Wk-d9cHqM'});
       await window.emailjs.sendForm('service_iazw862', 'template_kwqal0t', form);
-      form.reset();
-      showStatus('O pedido foi submetido com sucesso. Obrigado pelo contacto!', 'success');
+      form.reset(); // Limpa apenas após confirmação de sucesso do EmailJS.
+      fieldError(emailInput, emailError, '');
+      fieldError(confirmInput, confirmError, '');
+      showStatus('Pedido enviado com sucesso! Obrigado pelo contacto. Responderei assim que possível.', 'success');
+      focusStatus();
     } catch (error) {
       console.error('Falha ao enviar pedido:', error);
-      showStatus('Não foi possível enviar o pedido. Tenta novamente ou contacta-me pelo WhatsApp/email.', 'error');
+      showStatus('Não foi possível enviar o pedido. Os teus dados foram mantidos; podes tentar novamente ou contactar-me pelo WhatsApp/email.', 'error');
+      focusStatus();
     } finally {
-      button.disabled = false;
-      buttonText.textContent = initialText;
+      setSending(false);
     }
   });
 });
