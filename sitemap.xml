@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://tomassilvadigital.github.io/TomasSilvaDigital/index.html</loc></url>
+  <url>
+    <loc>https://tomassilvadigital.github.io/TomasSilvaDigital/</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
   <url><loc>https://tomassilvadigital.github.io/TomasSilvaDigital/sobre.html</loc></url>
-  <url><loc>https://tomassilvadigital.github.io/TomasSilvaDigital/servicos.html</loc></url>
+  <url>
+    <loc>https://tomassilvadigital.github.io/TomasSilvaDigital/servicos.html</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
   <url><loc>https://tomassilvadigital.github.io/TomasSilvaDigital/portfolio.html</loc></url>
   <url><loc>https://tomassilvadigital.github.io/TomasSilvaDigital/contacto.html</loc></url>
-  <url><loc>https://tomassilvadigital.github.io/TomasSilvaDigital/manutencao.html</loc></url>
+  <url>
+    <loc>https://tomassilvadigital.github.io/TomasSilvaDigital/manutencao.html</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
   <url><loc>https://tomassilvadigital.github.io/TomasSilvaDigital/estrela-do-sado.html</loc></url>
   <url><loc>https://tomassilvadigital.github.io/TomasSilvaDigital/politica-privacidade.html</loc></url>
 </urlset>
