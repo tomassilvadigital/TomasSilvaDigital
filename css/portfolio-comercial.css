@@ -37,3 +37,12 @@
 @media(max-width:991px){.portfolio-hero-inner{grid-template-columns:1fr}.portfolio-hero{padding:145px 0 80px}.portfolio-hero-image img{height:360px}.portfolio-commercial .featured-project{grid-template-columns:1fr}}
 @media(max-width:767px){.portfolio-hero{padding:130px 0 70px}.portfolio-hero-image img{height:250px}.portfolio-hero h1{letter-spacing:-.025em}.portfolio-commercial-card .project-image-wrap img{height:230px}.portfolio-commercial .featured-project-content{padding:32px 24px}.portfolio-process-note{padding:22px}.portfolio-conversion{margin-top:50px;padding:40px 23px}.portfolio-hero-actions .button,.portfolio-hero-actions .portfolio-outline-button{width:100%;justify-content:center}}
 @media(prefers-reduced-motion:reduce){.portfolio-commercial-card .project-image-wrap img,.portfolio-hero .button{transition:none!important}}
+
+/* Fase 4 · Etapa 4 — objetivo, solução e benefícios dos projetos */
+.portfolio-project-story {margin:20px 0 24px;padding:18px 20px;border-left:3px solid #E53935;background:rgba(255,255,255,.065);border-radius:0 12px 12px 0}
+.portfolio-project-story p {margin:0 0 12px;line-height:1.65}
+.portfolio-project-story p:last-child {margin-bottom:0}
+.portfolio-project-story strong {font-weight:700;color:#fff}
+.portfolio-card-benefit {margin:2px 0 22px;padding:13px 15px;border-left:3px solid #E53935;border-radius:0 8px 8px 0;background:#fff6f5;color:#343039;line-height:1.65}
+.portfolio-card-benefit strong {color:#8f1717}
+@media(max-width:767px){.portfolio-project-story{padding:15px}.portfolio-card-benefit{padding:12px}}
