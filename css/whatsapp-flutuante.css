@@ -1,0 +1,54 @@
+/* Tomás Silva Digital — Fase 4 / Etapa 1: WhatsApp flutuante */
+.tsd-whatsapp-float {
+  position: fixed;
+  inset: auto 22px 22px auto;
+  z-index: 900;
+  width: 58px;
+  height: 58px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #25D366;
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, .9);
+  box-shadow: 0 7px 22px rgba(0, 0, 0, .22);
+  text-decoration: none;
+  line-height: 1;
+  font-size: 29px;
+  transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.tsd-whatsapp-float:hover {
+  background: #1da851;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .28);
+}
+
+.tsd-whatsapp-float:focus-visible {
+  outline: 3px solid #e53935;
+  outline-offset: 4px;
+}
+
+/* Não competir com o painel de consentimento sobreposto ao fundo da página. */
+body:has(#tsd-consent:not([hidden])) .tsd-whatsapp-float {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media (max-width: 767px) {
+  .tsd-whatsapp-float {
+    right: 16px;
+    bottom: max(16px, env(safe-area-inset-bottom));
+    width: 52px;
+    height: 52px;
+    font-size: 26px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tsd-whatsapp-float { transition: none; }
+  .tsd-whatsapp-float:hover { transform: none; }
+}

@@ -15,7 +15,23 @@
     }
   }
 
+  // O botão de WhatsApp pertence ao componente partilhado do rodapé.
+  // Carregar o CSS uma única vez, sem editar todas as páginas HTML.
+  function ensureStylesheet(href, key) {
+    if (document.querySelector(`link[data-tsd-style="${key}"]`)) return;
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = href;
+    link.dataset.tsdStyle = key;
+    document.head.appendChild(link);
+  }
+
   async function initLayout() {
+    ensureStylesheet("css/whatsapp-flutuante.css", "whatsapp-flutuante");
+    // A página da Política de Privacidade não carregava o Font Awesome.
+    if (!document.querySelector('link[href*="font-awesome"]')) {
+      ensureStylesheet("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css", "font-awesome");
+    }
     await Promise.all([
       injectComponent("site-header", "components/header.html"),
       injectComponent("site-footer", "components/footer.html")
