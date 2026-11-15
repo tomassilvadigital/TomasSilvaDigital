@@ -489,19 +489,6 @@ linear-gradient(
     text-decoration:none;
 
 }
-.logo-ts{
-    width:56px;
-    height:56px;
-    object-fit:contain;
-    display:block;
-    flex:0 0 56px;
-}
-
-/* Mantém o nome da marca escuro apesar da regra genérica .logo span. */
-.navbar .logo .logo-text span{
-    color:#1F2937;
-}
-
 .logo-icon{
 
     width:56px;
@@ -1725,27 +1712,6 @@ linear-gradient(
 
 }
 
-.footer-brand{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    margin-bottom:20px;
-}
-
-.footer-logo{
-    width:48px;
-    height:48px;
-    object-fit:contain;
-    display:block;
-    flex:0 0 48px;
-}
-
-.footer .footer-brand h3{
-    margin:0;
-    font-size:1.35rem;
-    line-height:1.25;
-}
-
 .footer h3,
 .footer h4{
 
@@ -2339,6 +2305,14 @@ linear-gradient(
         padding:32px 24px;
     }
 }
+
+.logo-ts {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    border-radius: 50%;
+    display: block;
+} 
 
 /* Fase 3 — Etapa 4: contraste acessível, sem alterar a paleta da marca.
    A cor #E53935 mantém-se nos detalhes decorativos; onde há texto branco
